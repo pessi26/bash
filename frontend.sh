@@ -1,6 +1,6 @@
 #frontend script
 dnf install nginx -y
-vim /etc/nginx/default.d/expense.conf
+cp expense.conf  /etc/nginx/default.d/expense.conf
 systemctl enable nginx
 systemctl start nginx
 rm -rf /usr/share/nginx/html/*
