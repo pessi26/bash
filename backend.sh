@@ -14,6 +14,3 @@ cd /app
 npm install
 dnf install mysql -y
 mysql -h mysql.pdevops1126.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
-
-
-
