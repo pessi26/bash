@@ -2,15 +2,15 @@ log_file="/tmp/expense.log"
 color="\e[32m"
 
 
-echo -e ${color} "disable node js utilities" \e[0m
+echo -e ${color} "disable node js utilities \e[0m"
 dnf module disable nodejs -y &>>${log_file}
 echo $?
 
-echo -e ${color} "enable nodejs utilities" \e[0m
+echo -e ${color} "enable nodejs utilities \e[0m"
 dnf module enable nodejs:18 -y &>>${log_file}
 echo $?
 
-echo -e ${color} "install node js utilities" \e[0m
+echo -e ${color} "install node js utilities \e[0m"
 dnf install nodejs -y &>>${log_file}
 echo $?
 
